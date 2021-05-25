@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		body {
+			overflow: hidden;
+			background: black;
+		}
+		canvas {
+			border: 0.15em solid white;
+			background: black;
+			padding: 0;
+			margin: auto;
+			display: block;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		input {
+			width: 3em;
+		}
+		label {
+			color: white;
+		}
+		#inputs {
+			width: 29%;
+			margin: auto;
+		}
+	</style>
+
+	<body>
+		<canvas id="myCanvas" height="90" width="160"></canvas>
+		<script src="BrickBreaker.js" type="module" defer></script>
+		<br />
+		<div id="inputs">
+			<label for="ballSpeed">Ball Speed:</label>
+			<input type="number" id="ballSpeed" value="4" min="0" max="15" />
+			<span style="display: inline-block; width: 4em"></span>
+			<label for="numBalls">Number of Balls:</label>
+			<input
+				type="text"
+				id="numBalls"
+				readonly
+				style="width: 2em; text-align: center"
+			/>
+		</div>
+	</body>
+</html>
